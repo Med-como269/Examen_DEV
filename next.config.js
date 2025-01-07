@@ -3,6 +3,9 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    unoptimized: true, // Désactive l'optimisation des images
+  },
   target: "serverless",
   webpack: (config, { isServer }) => {
     if (!isServer) {
